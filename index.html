@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>West Field Mall</title>
+		<style>
+			* {
+				margin: 0;
+			}
+
+			.header img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 180px;
+				height: 180px;
+				margin-top: 20px;
+			}
+
+			.header h1 {
+				text-align: center;
+				letter-spacing: 1px;
+			}
+			.rows:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			.rows {
+				border: black solid 1px;
+				padding-top: 50px;
+				margin: 30px;
+				padding: 30px;
+				text-align: justify;
+				text-justify: distribute-all-lines;
+			}
+
+			.rows h1 {
+				text-align: center;
+				letter-spacing: 5px;
+			}
+
+			.stretch {
+				width: 100%;
+				display: inline-block;
+				font-size: 0;
+				line-height: 0;
+			}
+
+			.box img {
+				width: 380px;
+				height: 300px;
+			}
+
+			.box.one, .box.two, .box.three, .box.four {
+				vertical-align: top;
+				display: inline-block;
+				*display: inline;
+				zoom: 1;
+			}
+
+			.box h2 {
+				text-align: left;
+			}
+
+			.form:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			.form {
+				margin-left: 25%;
+				width: 50%;
+				text-align: center;
+				border: 1px solid black;
+				background-color:white;
+				margin-bottom: 50px;
+				margin-top: 50px;
+			}
+
+			input[type=text], select, textarea {
+				width: 90%;
+				padding: 12px;
+				box-sizing: border-box;
+				margin-top: 6px;
+				margin-bottom: 16px;
+				resize: vertical;
+			}
+			
+			input[type=submit] {
+				background-color: #24252A;
+				color: white;
+				padding: 12px 20px;
+				margin-bottom: 20px; /*Space between border and button*/
+				border: 1px solid black;
+				cursor: pointer;
+				transition: 0.3s ease 0.1s;
+			}
+			
+			input[type=submit]:hover {
+				background-color: #b45e7b;
+				color: #24252A;
+				font-weight: 700;
+				transition: 0.3s ease 0.1s;
+			}
+
+			footer {
+				width: 100%;
+				padding-top: 15px;
+				margin-top: 30px;
+				padding-bottom: 20px;
+				text-align: center;
+				color: white;
+				background-color: #24252A;
+				display: inline-block;
+			}
+
+			footer img {
+				padding-right: 10px; /*Space between icons and text*/
+				height: 50px;
+				vertical-align: middle; /*Aligns the text with the images*/
+			}
+
+			.icon {
+				display: inline-block;
+				padding-right: 60px; /*Space between the end of text to the next icon*/
+			}
+
+			.icon h4 {
+				display: inline-block;
+				transition: all 0.3s ease 0.1s;
+			}
+
+			/*Wraps the whole contents and sets its height to 100% to allow the footer to always appear at the bottom*/
+			.wrapper + body{
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="https://i.pinimg.com/originals/fc/31/a2/fc31a280041c62b5d376400dc0e4a01c.png">
+			<br>
+			<h1>A mall for Family</h1>
+		</div>
+		<div class="wrapper">
+            <div class="rows">
+                <div class="box one">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/6dcebb4cf75ac317">
+                    <h2>David Jones</h2>
+                </div>
+                <div class="box two">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/17ca104da4afd999">
+                    <h2>Farmers</h2>
+                </div>
+                <div class="box three">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/0eee02a103221d7b">
+                    <h2>MECCA</h2>
+				</div>
+				<div class="box four">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/f6af78db3389258">
+                    <h2>Corner Burger</h2>
+				</div>
+				<span class="stretch"></span>
+            </div>
+            <div class="rows">
+                <div class="box one">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/55a05843c09c1002">
+                    <h2>COS</h2>
+                </div>
+                <div class="box two">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/1f9ed5e6e2c57edd">
+                    <h2>Assembly Label</h2>
+                </div>
+                <div class="box three">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/68f27828d85f55d1">
+                    <h2>Seed Heritage</h2>
+				</div>
+				<div class="box four">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/58c32dbd0927b11">
+                    <h2>White + Wong's</h2>
+				</div>
+				<span class="stretch"></span>
+			</div>
+			<div class="form">
+                <form action="/action_page.php">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Name..."><br>
+
+					<label for="subject">Phone</label><br>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number..."><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="Email..."><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" style="height: 150px;" placeholder="Write a message..."></textarea><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+		</div>
+		<footer>
+            <div class="icon">
+                <img src="https://cdn.discordapp.com/attachments/511733115241234472/778179695237398528/facebook-icon.png" alt="facebook"><h4>Facebook</h4>
+            </div>
+            <div class="icon">
+                <img src="https://cdn.discordapp.com/attachments/511733115241234472/778179697065852938/instagram-icon.png" alt="instagram"><h4>Instagram</h4>
+            </div>
+            <div class="icon">
+                <img src="https://cdn.discordapp.com/attachments/511733115241234472/778179698358091786/twitter-icon.png" alt="twitter"><h4>Twitter</h4>
+            </div>
+            <div class="icon">
+                <img src="https://cdn.discordapp.com/attachments/511733115241234472/778179701532393492/whatsapp-icon.png" alt="whatsapp"><h4>WhatsApp</h4>
+            </div>
+        </footer>
+	</body>
+</html>
