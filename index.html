@@ -3,10 +3,13 @@
 	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
 		<title>West Field Mall</title>
 		<style>
 			* {
 				margin: 0;
+				font-family:'Mukta', sans-serif ;
 			}
 
 			.header img {
@@ -21,7 +24,9 @@
 			.header h1 {
 				text-align: center;
 				letter-spacing: 1px;
+				margin-bottom: 50px;
 			}
+			
 			.rows:after {
 				content: "";
 				display: table;
@@ -31,8 +36,7 @@
 			.rows {
 				border: black solid 1px;
 				padding-top: 50px;
-				margin: 30px;
-				padding: 30px;
+				margin-bottom: 30px;
 				text-align: justify;
 				text-justify: distribute-all-lines;
 			}
@@ -50,15 +54,21 @@
 			}
 
 			.box img {
-				width: 380px;
-				height: 300px;
+				width: 80%;
+				height: 100%;
 			}
-
-			.box.one, .box.two, .box.three, .box.four {
+			
+			.box.one {
+				padding-left: 5%;
+			}
+			
+			.box.one, .box.two {
 				vertical-align: top;
 				display: inline-block;
-				*display: inline;
-				zoom: 1;
+				width: 31%;
+				padding-left: 8%;
+				padding-right: 8%;
+				height: 100%;
 			}
 
 			.box h2 {
@@ -70,11 +80,15 @@
 				display: table;
 				clear: both;
 			}
-
+			
+			.wrapper {
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+				
 			.form {
-				margin-left: 25%;
-				width: 50%;
 				text-align: center;
+				padding-top: 20px;
 				border: 1px solid black;
 				background-color:white;
 				margin-bottom: 50px;
@@ -135,7 +149,7 @@
 			}
 
 			/*Wraps the whole contents and sets its height to 100% to allow the footer to always appear at the bottom*/
-			.wrapper + body{
+			.wrapper + body {
 				height: 100%;
 			}
 		</style>
@@ -143,8 +157,7 @@
 	<body>
 		<div class="header">
 			<img src="https://i.pinimg.com/originals/fc/31/a2/fc31a280041c62b5d376400dc0e4a01c.png">
-			<br>
-			<h1>A mall for Family</h1>
+			<h1>A MALL FOR FAMILY</h1>
 		</div>
 		<div class="wrapper">
             <div class="rows">
@@ -156,14 +169,6 @@
                     <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/17ca104da4afd999">
                     <h2>Farmers</h2>
                 </div>
-                <div class="box three">
-                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/0eee02a103221d7b">
-                    <h2>MECCA</h2>
-				</div>
-				<div class="box four">
-                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/f6af78db3389258">
-                    <h2>Corner Burger</h2>
-				</div>
 				<span class="stretch"></span>
             </div>
             <div class="rows">
@@ -175,28 +180,20 @@
                     <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/1f9ed5e6e2c57edd">
                     <h2>Assembly Label</h2>
                 </div>
-                <div class="box three">
-                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/68f27828d85f55d1">
-                    <h2>Seed Heritage</h2>
-				</div>
-				<div class="box four">
-                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/58c32dbd0927b11">
-                    <h2>White + Wong's</h2>
-				</div>
 				<span class="stretch"></span>
 			</div>
 			<div class="form">
                 <form action="/action_page.php">
-                    <label for="name">Name</label><br>
+                    <label for="name">NAME</label><br>
                     <input type="text" id="name" name="name" placeholder="Name..."><br>
 
-					<label for="subject">Phone</label><br>
+					<label for="subject">PHONE</label><br>
                     <input type="text" id="phone" name="phone" placeholder="Phone Number..."><br>
 
-                    <label for="email">Email</label><br>
+                    <label for="email">EMAIL</label><br>
                     <input type="text" id="email" name="email" placeholder="Email..."><br>
 
-                    <label for="message">Message</label><br>
+                    <label for="message">MESSAGE</label><br>
                     <textarea id="message" name="message" style="height: 150px;" placeholder="Write a message..."></textarea><br>
 
                     <input type="submit" value="Submit">
